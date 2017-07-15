@@ -37,6 +37,9 @@ header{
   height: 250px;
 
 }
+body{
+  background-color: black;
+}
 #mysidebar{
   background-color: #708090;
 }
@@ -47,6 +50,7 @@ position: relative;
 display: block;
 width: 80px;
 height: 80%;
+background-color: white;
 }
 .fa.fa-bars{
   font-size: 30px;
@@ -54,6 +58,9 @@ height: 80%;
 .fa.fa-remove{
   font-size: 36px;
   color: red;
+}
+.w3-content.w3-section {
+  background-color: white;
 }
 
 
@@ -115,9 +122,12 @@ h2{
 h3{
   text-align: center;
   font-size: 40px;
+  color: red;
 }
 p{
   text-align: center;
+  color: red;
+  font-size: 20px;
 }
 html {
   box-sizing: border-box;
@@ -150,6 +160,7 @@ video.shoot{
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: White;
 
 
 }
@@ -270,11 +281,14 @@ FINAO
   </div>
 
   <!-- Product grid -->
-  <div class="w3-row w3-grayscale">
+  <div class="w3-row">
     <div class="w3-col l3 s6">
       <div class="w3-container">
+        <div class="w3-display-container">
         <img class="money" src="img/16906341_219435475196413_2798108516886249472_n.jpg">
+        <span class="w3-tag w3-display-topleft">New</span>
         <p>JOGGERS<br><b>$30.00</b></p>
+        </div>
       </div>
       <div class="w3-container">
         <img class="money" src="img/top.jpg">
@@ -285,28 +299,13 @@ FINAO
     <div class="w3-col l3 s6">
       <div class="w3-container">
         <div class="w3-display-container">
-          <img class="money" src="img/18299046_123617908194713_3111445004107644928_n.jpg">
+          <img class="money" src="img/18382680_118210468752260_1563694740891762688_n.jpg">
           <span class="w3-tag w3-display-topleft">New</span>
           <div class="w3-display-middle w3-display-hover">
             <button class="w3-button">Buy now <i class="fa fa-shopping-cart"></i></button>
           </div>
         </div>
-        <p>Fluorescent Green Tank<br><b>$20.00</b></p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="M6PD4ERFNJSJQ">
-<table>
-<tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
-	<option value="Extra Small">Extra Small </option>
-	<option value="Small">Small </option>
-	<option value="Medium">Medium </option>
-	<option value="Large">Large </option>
-	<option value="XL">XL </option>
-</select> </td></tr>
-</table>
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+        <p>LIME Green Tank<br><b>$20.00</b></p>
       </div>
       <div class="w3-container">
         <img class="money" src="img/IMG_6432.jpg" style="width:100%">
@@ -333,8 +332,8 @@ FINAO
 
     <div class="w3-col l3 s6">
       <div class="w3-container">
-        <img class="money"src="img/IMG_2838.jpg" style="width:100%">
-        <p>Sleeveless Hoodies<br><b>$14.99</b></p>
+        <img class="money"src="img/IMG_1912.jpg" style="width:100%">
+        <p>Sleeveless Hoodies<br><b>$25.00</b></p>
       </div>
       <div class="w3-container">
         <img class="money" src="img/DSC_7243.jpg">
@@ -343,32 +342,8 @@ FINAO
     </div>
   </div>
 
-  <h3 id="hoody">Sleeveless Hoodies</h3>
+  <h3 id="hoody">Sleeveless Hoodies<br>25.00$</h3>
   <div class="row">
-    <div class="column">
-      <div class="card">
-        <img class="pin" src="img/18947745_160446767827000_6347479390200266752_n.jpg" alt="Jane">
-        <div class="container">
-          <h2>PINK</h2>
-          <p class="title">F.I.N.A.O. SLEEVELESS HOODIE UNISEX</p>
-          <p>Failure is NOT an option sleeveless hoodie</p>
-          <p><button class="button">BUY</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="card">
-        <img class="pin3" src="img/20120747_10155007233136713_727607017_n.jpg" alt="Mike" style="width:32%; ">
-        <img class="pin3" src="img/20117297_10155007309701713_1568467074_n.jpg" alt="Suzi" style="width:38%">
-        <div class="container">
-          <h2>RED</h2>
-          <p class="title">F.I.N.A.O. SLEEVELESS HOODIE UNISEX</p>
-          <p>Failure is NOT an option sleeveless hoodie</p>
-          <p><button class="button">BUY</button></p>
-        </div>
-      </div>
-    </div>
     <div class="column">
       <div class="card">
         <img class="pin3" src="img/19120990_448281502196264_4298031914079485952_n.jpg" alt="John" style="width:40%">
@@ -383,13 +358,25 @@ FINAO
     </div>
     <div class="column">
       <div class="card">
+        <img class="pin3" src="img/20120747_10155007233136713_727607017_n.jpg" alt="Mike" style="width:32%; ">
+        <img class="pin3" src="img/20117297_10155007309701713_1568467074_n.jpg" alt="Suzi" style="width:38%">
+        <div class="container">
+          <h2>RED</h2>
+          <p class="title">F.I.N.A.O. SLEEVELESS HOODIE UNISEX</p>
+          <p>Failure is NOT an option sleeveless hoodie</p>
+          <p><button class="button">BUY</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
         <img class="pin3" src="img/20120741_10155007375101713_853408940_n.jpg" alt="John" style="width:28%">
         <img class="pin3" src="img/20067841_10155007375191713_624415765_n.jpg" alt="John" style="width:34%">
         <div class="container">
           <h2>BLACK</h2>
           <p class="title">F.I.N.A.O. SLEEVELESS HOODIE UNISEX</p>
           <p>Failure is NOT an option sleeveless hoodie</p>
-          <p><button class="button">BUY</button></p>
+          <p><button class="button">25.00$  BUY</button></p>
         </div>
       </div>
     </div>
@@ -514,7 +501,8 @@ FINAO
     <div class="column">
 
       <div class="card">
-        <img  class="pin3" src="img/16906341_219435475196413_2798108516886249472_n.jpg" alt="John" style="width:50%">
+        <img  class="pin3" src="img/20136497_10155007482576713_1576774052_n.jpg" alt="John" style="width:34%">
+        <img  class="pin3" src="img/20117615_10155007482536713_1866574081_n.jpg" alt="John" style="width:36%">
         <div class="container">
           <h2>BLACK JOGGER</h2>
           <p class="title">FINAO JOGGERS UNISEX</p>
@@ -525,7 +513,7 @@ FINAO
     </div>
     <div class="column">
       <div class="card">
-        <img class="pin3" src="img/20030758_10154999844331713_1702705142_n.jpg" alt="John" style="width:50%">
+        <img class="pin4" src="img/20030758_10154999844331713_1702705142_n.jpg" alt="John" style="width:50%">
         <div class="container">
           <h2>GRAY JOGGER</h2>
           <p class="title">FINAO JOGGERS UNISEX</p>
