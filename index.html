@@ -74,6 +74,10 @@ input{
   border-right-color: silver;
   color: white;
   font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  display: block;
 }
 
 img.mySlides.w3-animate-top{
@@ -159,6 +163,7 @@ header.w3-container.w3-large{
 
 
 }
+
 h1{
   font-size: 20px;
   text-align: center;
@@ -245,6 +250,15 @@ border-color: white;
 .button:hover {
   background-color: #555;
 }
+
+.now{
+
+  text-align: center;
+display: block;
+position: relative;
+
+}
+
 </style>
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -434,7 +448,7 @@ FINAO
 
           <input type="text" size="10" name="coupcode"; />
           <br>
-          <br>
+
           <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
           <table>
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
@@ -482,7 +496,7 @@ FINAO
 
           <input type="text" size="10" name="coupcode"; />
           <br>
-          <br>
+
           <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
           <table>
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
@@ -491,7 +505,7 @@ FINAO
           	<option value="Large">Large </option>
           	<option value="XL">XL </option>
           </select> </td></tr>
-          <tr><td><input type="hidden" name="on1" value="Athlete Referral">Athlete Referral:</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+          <tr><td><input type="hidden" name="on1" value="Athlete Referral">Athlete Referral:</td></tr><tr><td><input type="text" name="os1" maxlength="100"></td></tr>
           </table>
           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
@@ -576,9 +590,9 @@ FINAO
 
           <input type="text" size="10" name="coupcode"; />
           <br>
-          <br>
+
           <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
-          <table>
+          <table class="now">
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
           	<option value="Medium">Medium </option>
@@ -630,7 +644,7 @@ FINAO
           <br>
           <br>
           <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
-          <table>
+          <table class="now">
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
           	<option value="Medium">Medium </option>
@@ -677,7 +691,7 @@ FINAO
           <br>
           <br>
           <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
-          <table>
+          <table class="now">
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
           	<option value="Medium">Medium </option>
@@ -724,7 +738,7 @@ FINAO
           <br>
           <br>
           <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
-          <table>
+          <table class="now">
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
           	<option value="Medium">Medium </option>
@@ -773,7 +787,7 @@ FINAO
           <br>
           <br>
           <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
-          <table>
+          <table class="now">
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
           	<option value="Medium">Medium </option>
@@ -818,7 +832,7 @@ FINAO
           <br>
           <br>
           <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
-          <table>
+          <table class="now">
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
           	<option value="Medium">Medium </option>
@@ -947,7 +961,7 @@ Enter Coupon Code:
           <br>
           <br>
           <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
-          <table>
+          <table class="now">
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
           	<option value="Medium">Medium </option>
@@ -994,7 +1008,7 @@ Enter Coupon Code:
           <br>
           <br>
           <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
-          <table>
+          <table class="now">
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
           	<option value="Medium">Medium </option>
@@ -1046,8 +1060,8 @@ Enter Coupon Code:
 <br>
 <br>
 <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
-<table>
-<tr><td><input type="hidden" name="on0" value="Athlete Referral">Athlete Referral:</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+<table class="now">
+<tr><td><input type="hidden" name="on0" value="Athlete Referral">Athlete Referral:</td></tr><tr><td><input type="text" name="os0" maxlength="200" margin="auto"></td></tr>
 </table>
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
