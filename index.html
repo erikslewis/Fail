@@ -299,22 +299,22 @@ margin: 0 71px;
     <h3 class="w3-wide"><b><img class="finlogo" src="img/20031017_10154999839346713_1318900837_n.jpg" alt=""></b></h3>
   </div>
   <div class="w3-padding-14 w3-large w3-text-white" style="font-weight:bold">
-    <a href="#hoody" class="w3-bar-item w3-button">Hoodies</a>
-      <a href="#TANKS" class="w3-bar-item w3-button">Tanks</a>
-      <a href="#tshirt" class="w3-bar-item w3-button">T-Shirts</a>
-      <a href="#stringers" class="w3-bar-item w3-button">Stringers</a>
+    <a href="#hoody" class="w3-bar-item w3-button" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">Hoodies</a>
+      <a href="#TANKS" class="w3-bar-item w3-button" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">Tanks</a>
+      <a href="#tshirt" class="w3-bar-item w3-button" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">T-Shirts</a>
+      <a href="#stringers" class="w3-bar-item w3-button" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">Stringers</a>
     <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Pants <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#jogger" class="w3-bar-item w3-button w3-light-grey"></i>Joggers</a>
+      <a href="#jogger" class="w3-bar-item w3-button w3-light-grey" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></i>Joggers</a>
     </div>
-    <a href="#gear" class="w3-bar-item w3-button">Gym Gear</a>
+    <a href="#gear" class="w3-bar-item w3-button" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">Gym Gear</a>
     <a href="#athletes" class="w3-bar-item w3-button">Athletes</a>
   </div>
-  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">Contact</a>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
-  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">Subscribe</a>
 </nav>
 
 <!-- Top menu on small screens -->
@@ -1389,6 +1389,7 @@ var amt,des;
   obj1.item_name.value = des;
 
 }
+
 
 </script>
 
