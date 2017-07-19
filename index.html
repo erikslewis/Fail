@@ -22,10 +22,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   border-width: thick;
 }
 .finlogo2{
-  display: block;
-     margin: 0 80%;
-     position: relative;
-     width: 60%;
+display:inline-block;
+margin: 0 auto;
+height: 60px;
   border-radius: 10%;
   border-style: outset;
   border-color: red;
@@ -37,8 +36,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   background-image:url("img/Chrome-with-black-metal-background-vector.jpg");
 }
 header{
-  height: 32%;
-  width: 50%;
+  height: 27%;
+  width:100%;
   text-align: center;
   margin: 0 auto;
   position: relative;
@@ -129,7 +128,9 @@ height: 80%;
 background-color: white;
 }
 .fa.fa-bars{
-  font-size: 30px;
+  font-size: 36px;
+  line-height: 20px;
+
 }
 .fa.fa-remove{
   font-size: 36px;
@@ -180,16 +181,16 @@ img.pin4{
   display: block;
 }
 img.finc{
-  width: 79%;
+  width: 100%;
+  height: 60px;
   text-align: center;
-  margin: 0 auto;
   position: relative;
   display: block;
 }
 img.finc1{
-  width: 159%;
+  width: 100%;
   text-align: center;
-  margin: 0 -30%;
+  margin: 0 0;
   position: relative;
   display: block;
 }
@@ -378,10 +379,14 @@ td{
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-large">
+    <img class="finc" src="img/Screen Shot 2017-07-12 at 8.36.47 PM.png">
+
   <div class="animated infinite pulse">
-  <div class="w3-bar-item w3-padding- w3-wide"><img class="finlogo2" src="img/finao.jpg" alt=""></div></div>
-  <img class="finc" src="img/Screen Shot 2017-07-12 at 8.36.47 PM.png">
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding- w3-left" onclick="w3_open()"><i class="fa fa-bars">MENU</i></a>
+  <div class><img class="finlogo2" src="img/finao.jpg" alt=""></div></div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding- w3-left" onclick="w3_open()"><i class="fa fa-bars">MENU</i></a>
+
+
+
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
