@@ -34,6 +34,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 }
 .row{
   display: inline-block;
+  background-color: #c4c7ce;
 }
 header{
   height: 32%;
@@ -42,9 +43,12 @@ header{
   margin: 0 auto;
   position: relative;
   display: block;
-}
-body{
   background-color: black;
+
+}
+
+body{
+  background-color: white;
   text-align: center;
   margin: 0 auto;
   position: relative;
@@ -68,9 +72,9 @@ input{
   background-color: black;
   border-width: thick;
   border-style:inset;
-  border-top-color: gray;
+  border-top-color: #c4c7ce;
   border-bottom-color:  gray;
-  border-left-color:gray;
+  border-left-color:#c4c7ce;
   border-right-color: gray;
   color: white;
   font-weight: bold;
@@ -90,6 +94,22 @@ border: none;
   display: block;
   width: 80%
 }
+ input.check{
+   background-color: black;
+   border-width: thick;
+   border-style:solid;
+   border-top-color: red;
+   border-bottom-color: red;
+   border-left-color:gray;
+   border-right-color: gray;
+   color: white;
+   font-weight: bold;
+   text-align: center;
+   margin: 0 auto;
+   position: relative;
+   display: block;
+   border-radius: 15px;
+ }
 
 img.mySlides.w3-animate-top{
   background-color: white;
@@ -173,6 +193,7 @@ header.w3-container.w3-large{
   padding: 5px;
 
 
+
 }
 .w3-button.w3-.w3-padding-large.w3-large{
   background-color: red;
@@ -192,7 +213,7 @@ h1{
 }
 h2{
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 h3{
   text-align: center;
@@ -213,14 +234,24 @@ html {
 }
 video.shoot{
 border-width: thick;
-border-style:inset;
-border-color: white;
+border-style:outset;
+border-color: #c4c7ce;
   text-align: center;
   margin: 0 auto;
   position: relative;
   display: block;
-}
+  background-color: white;
 
+}
+div.blackbg{
+  background-color: black;
+}
+div.w3-main{
+  background-color: white;
+}
+div.headerfix{
+  background-color: black;
+}
 
 .column {
   float: left;
@@ -239,6 +270,15 @@ border-color: white;
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: White;
+  border-style: solid;
+  border-width: thick;
+  border-color: black;
+
+
+}
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: red;
 
 
 }
@@ -335,10 +375,13 @@ margin: 0 71px;
   <div class="w3-hide-large" style="margin-top:0px"></div>
 
   <!-- Top header -->
+  <div class="headerfix">
+
+
   <header class="w3-container w3-large">
     <p class="w3-center"><img class="finc1" src="img/Screen Shot 2017-07-12 at 8.36.47 PM.png"></p>
   </header>
-
+</div>
   <div class="w3-content w3-section" style="max-width:400px">
 <img class="mySlides " src="img/19120476_1975790005970390_1153422396577808384_n.jpg" style="width:58%;hieght:40%">
 <img class="mySlides w3-animate-top" src="img/20067764_10155008789726713_1258171093_n.jpg" style="width:29.4%;hieght:40%">
@@ -353,6 +396,8 @@ margin: 0 71px;
 <img class="mySlides w3-animate-top" src="img/20117700_10155008780716713_554528072_n.jpg" style="width:31.3%;hieght:40%">
 <img class="mySlides w3-animate-top" src="img/20120741_10155007375101713_853408940_n.jpg" style="width:26.8%;hieght:50%">
 </div>
+
+<div class="blackbg">
 <video class="shoot" width="330" poster="img/Screen Shot 2017-07-12 at 5.49.57 PM.png" controls>
   <source src="img/19232850_115397875757430_3385484705234157568_n.mp4" type="video/mp4">
   <source src="img/19232850_115397875757430_3385484705234157568_n.mp4" type="video/ogg">
@@ -368,9 +413,9 @@ FINAO
     <img src="img/19989033_10154999848031713_1351811228_n.jpg" alt="Jeans" style="width:80%">
     <div class="w3-display-center w3-text-white" style="padding:0px 0px">
       <h1 class="w3-jumbo w3-hide-small">New Arrivals</h1>
+        <p><a href="#hoody" class="w3-button w3- w3-padding-large w3-large"><br>SHOP NOW</a></p>
       <h1 class="w3-hide-large w3-hide-medium" style="padding:2px 55px">New Arrivals</h1>
       <h1 class="w3-hide-small">COLLECTION 2017</h1>
-      <p><a href="#hoody" class="w3-button w3- w3-padding-large w3-large"><br>SHOP NOW</a></p>
     </div>
   </div>
 
@@ -440,7 +485,8 @@ FINAO
       </div>
     </div>
   </div>
-
+</div>
+</div>
 
   <div class="row">
       <h3 id="hoody">Sleeveless Hoodies<br>25.00$</h3>
@@ -474,7 +520,7 @@ FINAO
           <input type="text" size="10" name="coupcode"; />
           <br>
 
-          <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
+          <input class="check" type="button" value="Check Code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
           <table>
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
@@ -521,7 +567,7 @@ FINAO
           <input type="text" size="10" name="coupcode"; />
           <br>
 
-          <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
+          <input class="check" type="button" value="Check Code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
           <table>
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
@@ -568,7 +614,7 @@ FINAO
           <input type="text" size="10" name="coupcode"; />
           <br>
 
-          <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
+          <input class="check" type="button" value="Check Code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
           <table>
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
@@ -614,7 +660,7 @@ FINAO
           <input type="text" size="10" name="coupcode"; />
           <br>
 
-          <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
+          <input class="check" type="button" value="Check Code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
           <table >
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
@@ -665,7 +711,7 @@ FINAO
           <input type="text" size="10" name="coupcode"; />
           <br>
 
-          <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
+          <input class="check" type="button" value="Check Code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
           <table>
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
@@ -712,7 +758,7 @@ FINAO
           <input type="text" size="10" name="coupcode"; />
           <br>
 
-          <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
+          <input class="check" type="button" value="Check Code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
           <table>
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
@@ -759,7 +805,7 @@ FINAO
           <input type="text" size="10" name="coupcode"; />
           <br>
 
-          <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
+          <input class="check" type="button" value="Check Code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
           <table>
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
@@ -808,7 +854,7 @@ FINAO
           <input type="text" size="10" name="coupcode"; />
           <br>
 
-          <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
+          <input class="check" type="button" value="Check Code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
           <table>
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
@@ -853,7 +899,7 @@ FINAO
           <input type="text" size="10" name="coupcode"; />
           <br>
 
-          <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
+          <input class="check" type="button" value="Check Code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
           <table>
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
@@ -930,7 +976,7 @@ Enter Coupon Code:
 <input type="text" size="10" name="coupcode"; />
 <br>
 
-<input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
+<input class="check" type="button" value="Check Code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
 <table>
 <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
 	<option value="Small">Small </option>
@@ -982,7 +1028,7 @@ Enter Coupon Code:
           <input type="text" size="10" name="coupcode"; />
           <br>
 
-          <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
+          <input class="check" type="button" value="Check Code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
           <table>
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
@@ -1028,7 +1074,7 @@ Enter Coupon Code:
           <input type="text" size="10" name="coupcode"; />
           <br>
 
-          <input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
+          <input class="check" type="button" value="Check Code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
           <table>
           <tr><td><input type="hidden" name="on0" value="Size">Size:</td></tr><tr><td><select name="os0">
           	<option value="Small">Small </option>
@@ -1079,7 +1125,7 @@ Enter Coupon Code:
 <input type="text" size="10" name="coupcode"; />
 <br>
 
-<input type="button" value="Check code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
+<input class="check" type="button" value="Check Code" onclick="coupval =this.form.coupcode.value;  ChkCoup();" />
 <table>
 <tr><td><input type="hidden" name="on0" value="Athlete Referral">Athlete Referral:</td></tr><tr><td><input class="now" type="text" name="os0" maxlength="200" margin="auto"></td></tr>
 </table>
